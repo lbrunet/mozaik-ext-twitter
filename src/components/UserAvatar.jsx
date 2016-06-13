@@ -1,5 +1,5 @@
-var React  = require('react');
-var moment = require('moment');
+import React, { Component, PropTypes } from 'react';
+import moment from 'moment';
 
 var UserAvatar = React.createClass({
     render() {

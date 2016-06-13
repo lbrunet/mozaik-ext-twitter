@@ -1,5 +1,5 @@
-var React         = require('react');
-var HashtagLegend = require('./HashtagLegend.jsx');
+import React, { Component, PropTypes } from 'react';
+import HashtagLegend from './HashtagLegend';
 
 var HashtagsLegends = React.createClass({
     propTypes: {

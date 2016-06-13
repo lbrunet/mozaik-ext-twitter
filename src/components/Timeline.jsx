@@ -1,12 +1,12 @@
-var React            = require('react');
-var Reflux           = require('reflux');
-var ListTweet        = require('./ListTweet.jsx');
-var ApiConsumerMixin = require('mozaik/browser').Mixin.ApiConsumer;
+import React, { Component, PropTypes } from 'react';
+import Reflux from 'reflux';
+import ListTweet from './ListTweet';
+import Mozaik from 'mozaik/browser';
 
 var Timeline = React.createClass({
     mixins: [
         Reflux.ListenerMixin,
-        ApiConsumerMixin
+        Mozaik.Mixin.ApiConsumer
     ],
 
     propTypes: {
